@@ -4,7 +4,7 @@ data <- transform(data, Date = as.Date(Date, format = "%d/%m/%Y"))
 data <- transform(data, Time = strptime(Time, format = "%H:%M:%S"))
 data$concat <- paste(data$Date, data$Time,sep=" ")
 
-png(filename="plot2.png", width = 480, height = 480)
+png(filename="plot3.png", width = 480, height = 480)
 min <- as.Date("01/02/2007", format = "%d/%m/%Y")
 max <- as.Date("02/02/2007", format = "%d/%m/%Y")
 
